@@ -1,0 +1,112 @@
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ffffff 0%, #ffe6eb 50%, #ffd1dc 100%);
+    color: #4a4a4a;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 90%;
+    max-width: 950px;
+    padding: 30px;
+}
+
+
+.couple-img {
+    width: 100%;
+    max-width: 520px;
+    height: 480px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .couple-img {
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.right-side {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.right-side h1 {
+    color: #d81b60;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.right-side p {
+    color: #000000;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.Button-Hint {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.hint-text {
+    font-size: 0.95rem;
+    color: #e91e63;
+    font-weight: 500;
+
+}
+
+.pink-btn {
+    background: linear-gradient(45deg, #ff4081, #f50057);
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    /* ปุ่มทรงมนนุ่มๆ */
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(245, 0, 87, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pink-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(245, 0, 87, 0.45);
+}
+
+@media(max-width:768px) {
+    .Button-Hint {
+        align-items: center;
+    }
+
+}
